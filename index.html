@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+	<title> Atividade 01 </title>
+</head>
+<body class="m-0">
+	<!-- header -->
+	<header class="l-header position-fixed w-100" id="header">
+		<nav class="nav text-uppercase mx-5 mt-3 mb-2">
+			<a class="text-decoration-none fw-bold fs-5" href="#" class="nav_logo fw-bold"> Portal de Viagens </a>
+			
+			<ul class="d-flex mb-0 p-0" id="nav-ul">
+				<li class="d-flex ms-3 mb-0">
+					<a class="text-decoration-none" href="#destinos"> Destinos </a>
+				</li>
+				<li class="d-flex ms-3 mb-0">
+					<a class="text-decoration-none" href="#valores"> Valores </a>
+				</li>
+				<li class="d-flex ms-3 mb-0">
+					<a class="text-decoration-none" href="#contato"> Contato </a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main class="l-main">
+		<section class="home overflow-hidden position-relative mt-5 pt-5" id="destinos">
+			<div class="home-div mx-auto">
+				<img class="img-home mx-auto d-block w-50" src="img/home.png">
+				<h1 class="title text-uppercase text-center fw-bold m-0"> As melhores naves! </h1>
+				<p class="text-center fs-6 pt-2 pb-4 m-0"> Preços especiais para os planetas da federação galáctica. Visite ainda, universos, dimensões e realidades alternativas! </p>
+			</div>
+		</section>
+	
+		<section class="valores mx-auto mb-5" id="valores">
+			<div>
+				<h2 class="sub-title text-center text-uppercase fw-bold mt-4"> consultar valores </h2>
+			</div>
+
+			<div class="form">
+
+				<div class="form-group mx-auto overflow-hidden position-relative w-50 mb-4">
+					<input class="form-input border-0 pt-4" type="text" name="origem" required/>
+					<label for="text" class="label-form position-absolute w-100 h-100"> 
+						<span class="content-form position-absolute"> Origem </span>
+					</label>
+				</div>
+
+				<div class="form-group mx-auto overflow-hidden position-relative w-50 mb-4">
+					<input class="form-input border-0 pt-4" type="text" name="destino" required/>
+					<label for="text" class="label-form position-absolute w-100 h-100"> 
+						<span class="content-form position-absolute"> Destino </span>
+					</label>
+				</div>
+
+				<div class="form-group mx-auto overflow-hidden position-relative w-50 mb-4">
+					<input class="form-input border-0 pt-4" type="text" name="data-de-partida" required/>
+					<label for="date" class="label-form position-absolute w-100 h-100"> 
+						<span class="content-form position-absolute date"> Data de Partida </span>
+					</label>
+				</div>
+
+				<div class="form-group mx-auto overflow-hidden position-relative w-50 mb-4">
+					<input class="form-input border-0 pt-4" type="text" name="data-de-volta" required/>
+					<label for="date" class="label-form position-absolute w-100 h-100"> 
+						<span class="content-form position-absolute date"> Data de Volta </span>
+					</label>
+				</div>
+
+				<div class="form-group mx-auto overflow-hidden position-relative w-50 mb-4">
+					<button id="btnSubmit" type="submit" name="submit" class="btn btn-lg rounded-2"> Consultar </button>
+				</div>
+
+			</div>
+
+		</section>
+	</main>
+</body>
+</html>
